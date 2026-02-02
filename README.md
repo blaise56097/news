@@ -1,2 +1,2 @@
-# news
+# horizonnews
 news articles 
