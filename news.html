@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horizon News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: lab(88.32% -35.81 85.36);
+}
+
+        
+    header {
+    background-color: hsl(153, 83%, 47%);
+    box-shadow: 0 20px 10px hwb(0 96% 3%);
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--primary-blue);
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-blue);
+}
+
+/* Responsive Rule */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgb(247, 245, 245);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            background: #0a1d37;
+            color: rgb(245, 242, 242);
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<header>
+    <nav>
+        <div class="logo">HORIZON <span>NEWS</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<body>
+
+<header>
+    <h1>Horizon News</h1>
+    <p>Latest news from around the world</p>
+</header>
+
+<div class="container">
+
+    <!-- NEWS CARD 1 -->
+    <div class="card">
+        <img src="https://www.shutterstock.com/shutterstock/photos/262393244/display_1500/stock-photo-a-newspaper-with-the-headline-economic-news-262393244.jpg">
+        <div class="card-content">
+            <h3>Global Economy crisis</h3>
+            <p>Experts report worldwide economy crisis.</p>
+        </div>
+    </div>
+
+    <!-- NEWS CARD 2 -->
+    <div class="card">
+        <img src="https://www.techasoft.com/news_upload/2023/12/1702465445.png">
+        <div class="card-content">
+            <h3>Embracing Tomorrow</h3>
+            <p>Techasoft's Vision For The Future Of AI Technology.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/8C4E/production/_83981953_aspbd3zjw8-8srasmiftdbtop7lp9rjw1kci6rjzdwlj-1.jpg">
+        <div class="card-content">
+            <h3>Why free schools have not solved Kenya's problems</h3>
+            <p>Kenya has been praised for introducing free primary school education, in line with one of the Millennium Development Goals, but the country is now battling to raise education standards, as the BBC's Anne Soy has been finding out in Nairobi..</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*YdpLnadyR0p-rtYH.jpg">
+        <div class="card-content">
+            <h3>The Pulse of Sports: You’re Guide to the Latest Sport News</h3>
+            <p>In the world of sports, every day brings new stories, triumphs, and challenges. Whether you’re a die-hard fan or someone who enjoys casually keeping up with the latest updates, staying informed about the world of sports is always an exciting endeavor</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/06/95/26/0695260453ba01bb555490866edd093a.jpg">
+        <div class="card-content">
+            <h3>Health Experts Warn of Lifestyle Diseases</h3>
+            <p>Doctors urge healthier diets and exercise routines.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/ed/9a/aa/ed9aaaeae3e3b10b51a282d5de84a298.jpg">
+        <div class="card-content">
+            <h3>Climate Change </h3>
+            <p>Locals react to the rise of climate change inthe region.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/e5/c4/66/e5c466e1f1dfab365b48cbea5d34151a.jpg">
+        <div class="card-content">
+            <h3>Trump on IRAN invasion</h3>
+            <p> Trump warns Iran that he might take legal action.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.indianexpress.com/2025/01/5_c32cea.jpg">
+        <div class="card-content">
+            <h3>Business Leaders Meet for Annual Summit</h3>
+            <p>Focus on sustainability and innovation.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/c5/36/93/c5369326846c59fd288aea28470cece6.jpg">
+        <div class="card-content">
+            <h3>CyberSecurity</h3>
+            <p>Hackers are gaining new methods to attack victims and steal their credentials.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.artificialintelligence-news.com/wp-content/uploads/2025/01/BI24-Techforge-300x600-px.jpg">
+        <div class="card-content">
+            <h3>AI in gaming</h3>
+            <p> Gaming Companies are investing heavily in AI in 2026.</p>
+        </div>
+    </div>
+
+    <!-- Repeat up to 20 -->
+    <div class="card"><img src="https://nadp.org.uk/wp-content/uploads/2021/05/subtiling.png"><div class="card-content"><h3>Farmers Adopt Smart Agriculture</h3><p>Technology boosts food production.</p></div></div>
+    <div class="card"><img src="https://www.artificialintelligence-news.com/wp-content/uploads/2026/01/anthropic-report-hero.jpg"><div class="card-content"><h3>Anthropic’s usage stats paint a detailed picture of AI success</h3><p>AI success is expected to boom in the coming years.</p></div></div>
+    <div class="card"><img src="https://cdn.radioafrica.digital/image/2026/01/a4b85308-3ddd-47ac-b37a-95bb217e4ad9.jpg"><div class="card-content"><h3>Over 3, 000 athletes expected at the inaugural Maragoli Hills Forest Marathon on February 1</h3><p>The winners in the 42 km race will walk home with Sh1 million, with the first runners-up getting Sh700,000, while the second runners-up will be awarded Sh500,000.</p></div></div>
+    <div class="card"><img src="https://1000logos.net/wp-content/uploads/2019/06/Tiktok_Logo-768x480.png"><div class="card-content"><h3>TikTok finalizes deal for US joint venture to avoid ban</h3><p>Tiktok has finalised its USA sell.</p></div></div>
+    <div class="card"><img src="https://www.artificialintelligence-news.com/wp-content/uploads/2026/01/Modernising-apps-triples-the-odds-of-AI-returns-Cloudflare-says-scaled-e1769144674952.jpg"><div class="card-content"><h3>Modernising apps triples the odds of AI returns, Cloudflare says</h3><p>or many organisations, the AI debate has moved on from whether to adopt the technology to a harder question: why do the results feel uneven?.</p></div></div>
+    <div class="card"><img src="https://cdn.radioafrica.digital/image/2026/01/8f29f5f6-d157-4a7f-bca2-30a9060d34ff.jpeg"><div class="card-content"><h3>Shujaa, Lionesses set for tough tests at World Sevens Division Two</h3><p>Shujaa concluded a week-long high-performance training camp in South Africa.</p></div></div>
+    <div class="card"><img src="https://cdn-iledkkd.nitrocdn.com/JgVqWxjBXAxXZqxnJHbtcSOOAHYjFqOB/assets/images/optimized/rev-a097c2e/financefeeds.com/wp-content/uploads/2026/01/Why-Live-Crypto-News-Moves-Markets-Faster-Than-Fundamentals.jpeg"><div class="card-content"><h3>Why Live Crypto News Moves Markets Faster Than Fundamentals</h3><p>Perpetual futures and leveraged trading structures amplify reactions to headlines, causing rapid price movements disconnected from fundamental metrics.</p></div></div>
+    <div class="card"><img src="https://cms.eu-central-1.linodeobjects.com/image/2026/01/c925f63a-90f7-4244-a91a-f1b542e9cb49.png"><div class="card-content"><h3>KRA to deploy high tech in water, air to nab smugglers</h3><p>The plan signals a shift by the tax collector towards an aggressive enforcement strategy.</p></div></div>
+    <div class="card"><img src="https://cms.eu-central-1.linodeobjects.com/image/2026/01/62929674-0d23-4ba6-872e-453680b48cc6.jpg"><div class="card-content"><h3>Germany arrests suspected Hamas member over alleged attack plot</h3><p>Federal prosecutors said that in August 2025 he helped procure 300 rounds of ammunition and was involved in an alleged plot to attack Jewish and Israeli institutions.</p></div></div>
+    <div class="card"><img src="https://cms.eu-central-1.linodeobjects.com/image/2026/01/bf640bd7-0d9b-4aa1-95f4-b172258320a2.jpg"><div class="card-content"><h3>Truphena Muthoni's 72-hour tree-hugging</h3><p>Truphena Muthoni's 72-hour tree-hugging record ratified by Guinness World Records.</p></div></div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Horizon News</p>
+</footer>
+
+</body>
+</html>
